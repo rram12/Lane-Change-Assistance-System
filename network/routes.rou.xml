@@ -1,0 +1,24 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+	<vType id="target" vClass="passenger" color="255,0,0" accel="2.3" decel = "4.0" maxSpeed = "60"/>
+    <vType id="car" vClass="passenger" color="255,255,255" accel="2.3" decel = "4.0" maxSpeed = "60"/>
+
+    <route id="r0" edges="m0 m1 m2" />
+    <route id="r1" edges="m0 m1 out0" />
+    <route id="r2" edges="m0 m1 out1" />
+    <route id="r3" edges="in0 m1 out1" />
+    <route id="r4" edges="in0 m1 m2" />
+    <route id="r5" edges="in0 m1 out0" />
+    <route id="r6" edges="in1 m1 m2" />
+    <route id="r7" edges="in1 m1 out1" />
+    <route id="r8" edges="in1 m1 out0" />
+
+    <!-- <vehicle id="v0" type="target" route="r3" depart="0" /> -->
+
+
+    <!-- <flow id="f0" type="car" begin="30" departLane="random" vehsPerHour="100" route="r1" />
+    <flow id="f1" type="car" begin="30" departLane="random" vehsPerHour="100" route="r3" />
+    <flow id="f2" type="car" begin="30" departLane="random" vehsPerHour="100" route="r0" />
+    <flow id="f3" type="car" begin="30" departLane="random" vehsPerHour="100" route="r2" /> -->
+
+</routes>

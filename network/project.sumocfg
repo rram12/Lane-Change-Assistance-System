@@ -1,0 +1,11 @@
+<configuration>
+    <input>
+        <net-file value="project.net.xml" />
+        <route-files value="routes.rou.xml" />
+    </input>
+
+    <output>
+        <full-output value="../output/results.xml" />
+    </output>
+
+</configuration>

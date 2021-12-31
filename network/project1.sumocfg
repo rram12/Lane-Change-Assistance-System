@@ -1,0 +1,7 @@
+<configuration>
+    <input>
+        <net-file value="project.net.xml" />
+        <route-files value="routess.rou.xml" />
+    </input>
+
+</configuration>

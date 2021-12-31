@@ -1,0 +1,30 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+	<vType id="car" vClass="passenger" color="255,255,255"/>
+    <vType accel="2.3" decel = "4.0" id="Car" color="255,0,0" length="5" maxSpeed = "2.2" carFollowModel="KraussPS" vClass="truck" emissionClass="HBEFA3/HDV" />
+
+    <route id="r0" edges="m0 m1 m2" />
+    <route id="r1" edges="m0 m1 out0" />
+    <route id="r2" edges="m0 m1 out1" />
+    <route id="r3" edges="in0 m1 out1" />
+    <route id="r4" edges="in0 m1 m2" />
+    <route id="r5" edges="in0 m1 out0" />
+    <route id="r6" edges="in1 m1 m2" />
+    <route id="r7" edges="in1 m1 out1" />
+    <route id="r8" edges="in1 m1 out0" />
+
+    <vehicle id="v0" type="Car" route="r3" depart="30" />
+    <vehicle id="0" type="car" route="r3" depart="10" />
+    <vehicle id="1" type="car" route="r3" depart="20" />
+    <vehicle id="2" type="car" route="r3" depart="30" />
+    <vehicle id="45" type="car" route="r3" depart="10" />
+    <vehicle id="5" type="car" route="r3" depart="0" />
+    <vehicle id="55" type="car" route="r3" depart="8" />
+    <vehicle id="4" type="car" route="r3" depart="30" />
+
+    <flow id="f0" type="car" begin="0" departLane="random" vehsPerHour="100" route="r1" />
+    <flow id="f1" type="car" begin="0" departLane="random" vehsPerHour="100" route="r8" />
+    <flow id="f2" type="car" begin="0" departLane="random" vehsPerHour="100" route="r0" />
+    <flow id="f3" type="car" begin="0" departLane="random" vehsPerHour="100" route="r2" /> 
+
+</routes>

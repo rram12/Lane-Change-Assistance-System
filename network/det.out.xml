@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Wed Jan  5 23:22:04 2022 by Eclipse SUMO Version 1.4.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="network/project.net.xml"/>
+        <route-files value="network/routes.rou.xml"/>
+        <additional-files value="network/project.add.xml"/>
+    </input>
+
+    <output>
+        <full-output value="network/../output/results.xml"/>
+    </output>
+
+    <traci_server>
+        <remote-port value="39163"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+    <interval begin="0.00" end="32.00" id="det_0" nVehContrib="1" flow="112.50" occupancy="1.10" speed="14.18" harmonicMeanSpeed="14.18" length="5.00" nVehEntered="1"/>
+</detector>
